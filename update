@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# check npm version (required >3.0)
+check=$(/usr/bin/npm -v | grep "^3")
+if [[ "$check" == "" ]]; then
+    echo Incorrect npm version needed for npm version bump
+else
+    /usr/bin/npm version patch
+    git push --follow-tags
+fi
+
