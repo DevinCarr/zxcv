@@ -5,10 +5,10 @@ node_js:
 - '4'
 notifications:
     email: false
+before_deploy: "mkdir lib; cp index.js lib/"
 deploy:
-  - provider: npm
+    provider: npm
     email: devin.carr0@gmail.com
-    before_deploy: "mkdir lib; cp index.js lib/"
     api_key:
         secure: qRZ/RRFc+9mgP2iRbWVJjwMX4e9X47os5N2HQh978EqUWXM/hjADVY0jYl1dmCRgzeyALzJYtPn0jQA7lX36xM14dSEJZLofbfBeoHzZml1Si1WQsJcCDs6PiJc03mDcCLbXsFsKeLVp0qoTOuSb1fQo3iA6ui+JfLfFWg/c5nb5Ww/uoe9cW9giYBxLrmQwwmgRgxIUhgkuGrsT1Mf5xaVg6YlWwdjam3YX3XWsi5imEINXJmKwp49+04+PSgPUNRzegCqDeLUsjejYCnjLbPb7AZL10XB9hYMNi4CFpT/ppIPFWuTQffx1wy7nD3Kz1Blyn7Z7ubtUsF8VjSxayzMHDQzJgVRGlbSnp7EngvsJT4lf1+fA9O2S8UV4/Koo0CH6QAirwRA0Vc7quW8J3jTq7QambQFOQXpHxiMDaJJVncotoV9WC4FGOMq6EMC1GmFV5pmC8a67q+6cPJHM09NdhjZ9IR9zRrR5UgDojvxHlM3avm5lLGybNsgIXLCj8xJt+g9zFI8JTOxxZ3dYqyizTTleofTU2kdHIoNHqfM8Y/fDbtG2sihokls4bvWs6Q+J+eSQ3tzYn8cMbA+nj+3DyiCGI6OJzu5qIyVCXKtZ8u+tbuiG5EGx2nBcZFZ/lanZkJPR1vf/xwGHk6oZmkcQRIgtTgIqtcZGt6b4mxg=
     on:
