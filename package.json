@@ -1,0 +1,19 @@
+{
+  "name": "zxcv",
+  "version": "1.0.0",
+  "description": "NPM test repository and travis-ci testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevinCarr/zxcv.git"
+  },
+  "author": "Devin Carr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevinCarr/zxcv/issues"
+  },
+  "homepage": "https://github.com/DevinCarr/zxcv#readme"
+}
