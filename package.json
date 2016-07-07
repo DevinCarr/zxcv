@@ -1,8 +1,8 @@
 {
   "name": "zxcv",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "NPM test repository and travis-ci testing",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "node ./test/test.js"
   },
