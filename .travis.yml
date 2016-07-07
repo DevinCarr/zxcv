@@ -1,0 +1,7 @@
+sudo: false
+node_js:
+    - '6'
+    - '4'
+# deploy:
+#     skip_cleanup: true
+#     provider: npm
